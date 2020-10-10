@@ -58,6 +58,21 @@ h1, h2, h3, h4, h5, h6, .logo {
     margin-bottom: 30px;
     border-left: solid 100px #66c4ab;
 }
+.hd-ln-center{
+  height: 1px;
+  width: 200px;
+  background-color: rgb(112, 112, 112);
+  display: block;
+  border-left: solid 100px #66c4ab;
+  position: relative;
+  margin: auto;
+  margin-bottom: 80px;
+}
+.hd-center {
+  text-align: center;
+  margin: 80px 0px 0;
+  position: relative;
+}
 .narrow{
     font-weight: 200;
 }
@@ -366,6 +381,52 @@ header.masthead {
     -webkit-transition: all .5s;
     transition: all .5s;
   }
+/*Resume*/
+
+.rsm {
+  background: url("../images/rsm_bg.png") no-repeat fixed;
+}
+.rsm .container{
+  padding-top: 35px;
+}
+.rsm .vl {
+  border-left: thick solid #66c4ab;
+  color: #eee;
+}
+.crc{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+  margin-left: -25px;
+}
+.footer{
+  text-align: center;
+}
+/*service*/
+.services .itm {
+  text-align: center;
+  padding: 40px 15px;
+}
+.services span {
+  font-size: 40px;
+  color: #66c4ab;
+  margin-bottom: 30px;
+}
   /*******/
 
-  
+  @media (max-width: 420px) {
+    .content .social-icon span {
+      padding: 4px;
+      font-size: 18px;
+    }
+    .btn-std2 {
+      padding: 11px 55px;
+      top: 40px;
+      margin: 0 10px;
+    }
+    .btn-std {
+      padding: 12px 75px;
+    }
+  }
