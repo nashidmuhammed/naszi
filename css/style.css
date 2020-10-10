@@ -37,6 +37,9 @@ h1, h2, h3, h4, h5, h6, .logo {
 	text-decoration: none;
 	color: inherit;
 }
+.mb-md50{
+  margin-bottom: 50px;
+}
 .section-padding {
     padding: 100px 0;
 }
@@ -64,13 +67,13 @@ h1, h2, h3, h4, h5, h6, .logo {
 
 .btn-std{
   top: 32px;
-  padding:15px 80px;
+  padding:13px 45px;
   margin: 0 10px;
   display: inline-block;
   text-decoration:none;
   font-family: "proxima-nova", sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 12px;
   text-transform: uppercase!important;
   letter-spacing: 2px;
   color: #fff;
@@ -197,8 +200,9 @@ opacity:1;
 	color: #FFF;
 	transition: all 0.5s;
   position: relative;
-  top:10px;
-  padding:13px 50px;
+  top:15px;
+  padding:12px 25px;
+  font-size: 13px;
 }
 .btn-std2::before {
 	content: '';
@@ -316,6 +320,7 @@ header.masthead {
     header.masthead h1 {
       font-size: 2.5rem;
     }
+    
   }
   @media (min-width: 1200px) {
     header.masthead h1 {
@@ -326,6 +331,7 @@ header.masthead {
         font-weight: 200;
       }
   }
+
   
   /*about*/
   .proimg{
@@ -340,7 +346,9 @@ header.masthead {
   .content span{
     font-weight: 700;
   }
-
+.content p{
+  margin-bottom: 12px;
+}
  
   .content .social-icon span{
     font-size: 20px;
