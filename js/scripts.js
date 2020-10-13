@@ -65,4 +65,24 @@ $(function () {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
   };
+
+ 
+  $("#submit-form").submit((e)=>{
+    e.preventDefault()
+    console.log("Entered")
+    $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbxc-44qkBPPAgUejyIBiGY635Vlzjpigm2-FTe3ow/exec",
+        data:$("#submit-form").serialize(),
+        method:"post",
+        success:function (response){
+            alert("Form submitted successfully")
+            window.location.reload()
+            //window.location.href="https://google.com"
+        },
+        error:function (err){
+            alert("Something Error")
+
+        }
+    })
+})
   console.log("end")

@@ -76,7 +76,9 @@ h1, h2, h3, h4, h5, h6, .logo {
 .narrow{
     font-weight: 200;
 }
-
+section {
+  margin-top: 150px;
+}
 /*----Button----*/
 /* btn-std  */
 
@@ -103,6 +105,7 @@ h1, h2, h3, h4, h5, h6, .logo {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background: transparent!important;
+  z-index: 99;
 }
 
 
@@ -401,9 +404,7 @@ header.masthead {
   position: absolute;
   margin-left: -25px;
 }
-.footer{
-  text-align: center;
-}
+
 /*service*/
 .services .itm {
   text-align: center;
@@ -414,9 +415,60 @@ header.masthead {
   color: #66c4ab;
   margin-bottom: 30px;
 }
+/*Contact*/
+.contact {
+  background: url("../images/contact_img.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  
+}
+.form-control {
+  background-color: #131414ce;
+  color: rgb(226, 226, 226);
+  border: 1px solid #131414;
+  border-radius: 1px;
+  padding: 10px;
+}
+.form-control:focus {
+  background-color: #111111;
+  border-color: #66c4ab;
+  color: #FFF;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 255, 242, 0.6);
+}
+.contact .btn-std{
+  top: 5px;
+  margin: 0;
+}
+.contact input{
+  margin-bottom: 10px;
+}
+.contact .icn{
+  font-size: 30px;
+  color: #66c4ab;
+}
+
+.contact .menu{
+  color: #eee;
+  margin-left: 5px;
+}
+.contact p{
+  color: rgb(126, 180, 164);
+  margin-left: 5px;
+}
+/*Footer*/
+.footer{
+  text-align: center;
+}
   /*******/
 
   @media (max-width: 420px) {
+    .footer p{
+      font-size: 10px;
+    }
     .content .social-icon span {
       padding: 4px;
       font-size: 18px;
@@ -428,5 +480,23 @@ header.masthead {
     }
     .btn-std {
       padding: 12px 75px;
+    }
+    .hd{
+      font-size: 30px;
+    }
+    h5 {
+      font-size: 1em;
+    }
+    h3{
+      font-size: 1.6em;
+    }
+    .contact .icn{
+      font-size: 20px;
+    }
+    .contact .menu{
+      margin-left: 0;
+    }
+    .contact p{
+      margin-left: 0;
     }
   }

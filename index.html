@@ -11,7 +11,9 @@
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 
-    
+    <!---->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!---->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -91,7 +93,7 @@
     	<!-- End Header ====
         ======================================= -->
         
-        <section class="section-padding">
+        <section>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5">
@@ -103,7 +105,7 @@
                             <div class="content">
                                 <h4 class="hd">I Am a Web / Software Developer</h4>
                                 <br><div class="hd-ln"></div>
-                                <p>I am <span>Nashid</span> fusce quis volutpat porta, ut tincidunt eros est nec diam erat quis volutpat porta, neque massa, ut tincidunt eros est nec diam Fusce Fusce quis volutpat porta, ut tincidunt eros est nec diam erat quis volutpat porta, neque massa, ut tincidunt eros est nec diam Fusce Fusce quis volutpat porta, ut tincidunt eros est nec diam erat quis volutpat porta, neque massa, ut tincidunt eros est nec diam</p>
+                                <p>I am <span>Nashid Muhammed</span> </p>
                                 <p>We’re full service which means we’ve got you covered on design and content right through to digital. You’ll form a lasting relationship with us, collaboration is central to everything we do. We’ll push you out of your comfort zone from time-to-time.</p>
     
                                 <div class="social-icon">
@@ -282,14 +284,102 @@
               </div>
             </section>
 
+            <section class="contact">
+              <div class="container">
+                <h1 class="hd-center">Get In Touch</h1>
+                <br><div class="hd-ln-center"></div>
+                <div class="container-fluid">
+                  <div class="row mb-3">
+                    <div class="col-sm-4">                   
+                      <div class="row">
+                        <div class="col-sm-1">
+                          <span class="icn"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="col-sm-11">
+                          <span class="menu">Phone:</span>
+                          <p>+91 7559816534</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">                   
+                      <div class="row">
+                        <div class="col-sm-1">
+                          <span class="icn"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="col-sm-11">
+                          <span class="menu">Email:</span>
+                          <p>muhammednashid.t@gmail.com</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">                   
+                      <div class="row">
+                        <div class="col-sm-1">
+                          <span class="icn"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="col-sm-11">
+                          <span class="menu">Address:</span>
+                          <p>Kozhikode, Kerala, India</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <form id="submit-form" action="">
+                  <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <input class="form-control" type="text" name="name" placeholder="Name" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <input class="form-control" type="email" name="email" placeholder="Email" required>
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group col-md-12">
+                        <input class="form-control" type="text" name="subject" placeholder="Subject" required>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <textarea class="form-control" rows="4" type="text" name="message" placeholder="Message" required></textarea>
+                      </div>
+                  </div>
+                      <button type="submit" class="btn btn-std">Send Message</button>
+                
+                </form>
+              </div>
+            </section>
+
             <br><br><br><br><br><br><br><br>
             <footer class="footer">
               <p>Website developed by <a href="https://www.instagram.com/na_szi/">Nashid Muhammed</a></p>
               <p>Copyright &copy; And Made With Love All Rights Reserved.</p>
             </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
+
+
+           <!-- <script>
+              $("#submit-form").submit((e)=>{
+                  e.preventDefault()
+                  console.log("Entered")
+                  $.ajax({
+                      url:"https://script.google.com/macros/s/AKfycbxc-44qkBPPAgUejyIBiGY635Vlzjpigm2-FTe3ow/exec",
+                      data:$("#submit-form").serialize(),
+                      method:"post",
+                      success:function (response){
+                          alert("Form submitted successfully")
+                          window.location.reload()
+                          //window.location.href="https://google.com"
+                      },
+                      error:function (err){
+                          alert("Something Error")
+          
+                      }
+                  })
+              })
+          </script>-->
+              
+     
     <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   
+   
 </body>
 </html>
