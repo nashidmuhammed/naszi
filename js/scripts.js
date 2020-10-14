@@ -6,11 +6,50 @@ $(window).on("load",function(){
 });
 
 
+/*nav
+$(window).scroll(function(){
+  if (isScrolledIntoView('#ho') === true) {
+      $('.nav a').removeClass('active')
+      $('.nav .hom').addClass('active')
+  }
+});
+
+*/
+function isScrolledIntoView(elm) {
+  var docViewTop = $(window).scrollTop();
+  var docViewBottom = docViewTop + $(window).height();
+
+  var elmTop = $(elm).offset().top;
+  var elmBottom = elmTop + $(elm).height();
+
+  return ((elmBottom <= docViewBottom) && (elmTop >= docViewTop));
+}
+$(window).scroll(function(){
+  if (isScrolledIntoView('#home') === true) {
+      $('.nav-item a').removeClass('active')
+      $('.nav-link.home').addClass('active')
+  }
+  else if (isScrolledIntoView('#abt') === true) {
+    $('.nav-item a').removeClass('active')
+    $('.nav-link.abt').addClass('active')
+  }
+  else if (isScrolledIntoView('#ser') === true) {
+    $('.nav-item a').removeClass('active')
+    $('.nav-link.ser').addClass('active')
+  }
+  else if (isScrolledIntoView('#cont') === true) {
+    $('.nav-item a').removeClass('active')
+    $('.nav-link.cont').addClass('active')
+  }
+});
+
+
 
 $(function () {
     $(document).scroll(function () {
       var $nav = $(".fixed-top");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      
     });
   });
 
@@ -75,20 +114,33 @@ $(function () {
  
   $("#submit-form").submit((e)=>{
     e.preventDefault()
-    console.log("Entered")    
+    console.log("Entered") 
+    $(".contact .btn-std").hide()   
+    $(".subload").show()
     $.ajax({
         url:"https://script.google.com/macros/s/AKfycbxc-44qkBPPAgUejyIBiGY635Vlzjpigm2-FTe3ow/exec",
         data:$("#submit-form").serialize(),
         method:"post",
         success:function (response){
-            alert("Form submitted successfully")
-            window.location.reload()
-            //window.location.href="https://google.com"
+          $(".contact .btn-std").show()   
+          $(".subload").hide()
+          $("#success_alert").modal()
         },
         error:function (err){
-            alert("Something Error")
+          $(".contact .btn-std").show()   
+          $(".subload").hide()
+          $("#error_alert").modal()
 
         }
     })
-})
+  })
+
+ $(document).ready(function(){
+  $(".close").click(function(){
+    window.location.reload()
+  })
+  $(".clos").click(function(){
+    window.location.reload()
+  })
+ })
   console.log("end")

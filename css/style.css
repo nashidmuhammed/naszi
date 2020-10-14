@@ -1,9 +1,10 @@
 * {
 	margin: 0;
 	padding: 0;
-  	box-sizing: border-box;
+  box-sizing: border-box;
 	outline: none !important;
-	list-style: none;
+  list-style: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -211,7 +212,9 @@ opacity:1;
 	opacity: 0;	
 	transform: scale(0.1, 1);
 }
-
+.modal-content{
+  background-color: #333;
+}
 
 
 .btn-std2 {
@@ -451,6 +454,15 @@ header.masthead {
   color: #66c4ab;
 }
 
+.contact .subload {
+  margin-left: 50px;
+  display: none;
+  transition: all .5s;
+}
+.wait{
+  color: #66c4ab;
+  padding-left: 10px;
+}
 .contact .menu{
   color: #eee;
   margin-left: 5px;
@@ -459,6 +471,7 @@ header.masthead {
   color: rgb(126, 180, 164);
   margin-left: 5px;
 }
+
 /*Footer*/
 .footer{
   text-align: center;
@@ -499,6 +512,11 @@ header.masthead {
     .contact p{
       margin-left: 0;
     }
+    .crc {
+      width: 10px;
+      height: 10px;
+      margin-left: -23px;
+  }
   }
 
   /*LOADER*/
