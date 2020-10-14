@@ -77,7 +77,7 @@ $(function () {
     e.preventDefault()
     console.log("Entered")    
     $.ajax({
-        //url:"https://script.google.com/macros/s/AKfycbxc-44qkBPPAgUejyIBiGY635Vlzjpigm2-FTe3ow/exec",
+        url:"https://script.google.com/macros/s/AKfycbxc-44qkBPPAgUejyIBiGY635Vlzjpigm2-FTe3ow/exec",
         data:$("#submit-form").serialize(),
         method:"post",
         success:function (response){
