@@ -1,6 +1,12 @@
 console.log("ready")
-/*alert(">>>>>>>>>>>>> TESTING MOD >>>>>>>>>>>>>\n........................................................\n........................................................\n..............The website under Developing..............\n........................................................\n........................................................")
-*/  
+  
+/*laod*/
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow");
+});
+
+
+
 $(function () {
     $(document).scroll(function () {
       var $nav = $(".fixed-top");
@@ -69,9 +75,9 @@ $(function () {
  
   $("#submit-form").submit((e)=>{
     e.preventDefault()
-    console.log("Entered")
+    console.log("Entered")    
     $.ajax({
-        url:"https://script.google.com/macros/s/AKfycbxc-44qkBPPAgUejyIBiGY635Vlzjpigm2-FTe3ow/exec",
+        //url:"https://script.google.com/macros/s/AKfycbxc-44qkBPPAgUejyIBiGY635Vlzjpigm2-FTe3ow/exec",
         data:$("#submit-form").serialize(),
         method:"post",
         success:function (response){
