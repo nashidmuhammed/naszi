@@ -1,10 +1,13 @@
 console.log("ready")
-  
-/*laod*/
+
+/*load*/
 $(window).on("load",function(){
   $(".loader-wrapper").fadeOut("slow");
 });
 
+
+
+//window.addEventListener("scroll",noscroll);
 
 /*nav
 $(window).scroll(function(){
