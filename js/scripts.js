@@ -7,17 +7,7 @@ $(window).on("load",function(){
 
 
 
-//window.addEventListener("scroll",noscroll);
 
-/*nav
-$(window).scroll(function(){
-  if (isScrolledIntoView('#ho') === true) {
-      $('.nav a').removeClass('active')
-      $('.nav .hom').addClass('active')
-  }
-});
-
-*/
 function isScrolledIntoView(elm) {
   var docViewTop = $(window).scrollTop();
   var docViewBottom = docViewTop + $(window).height();
@@ -43,6 +33,10 @@ $(window).scroll(function(){
   else if (isScrolledIntoView('#cont') === true) {
     $('.nav-item a').removeClass('active')
     $('.nav-link.cont').addClass('active')
+  }
+  else if (isScrolledIntoView('#testinomials') === true) {
+    $('.nav-item a').removeClass('active')
+    $('.nav-link.testinomials').addClass('active')
   }
 });
 
