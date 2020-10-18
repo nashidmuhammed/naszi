@@ -22,15 +22,15 @@ $(window).scroll(function(){
       $('.nav-item a').removeClass('active')
       $('.nav-link.home').addClass('active')
   }
-  else if (isScrolledIntoView('#abt') === true) {
+  else if (isScrolledIntoView('#about') === true) {
     $('.nav-item a').removeClass('active')
     $('.nav-link.abt').addClass('active')
   }
-  else if (isScrolledIntoView('#ser') === true) {
+  else if (isScrolledIntoView('#services') === true) {
     $('.nav-item a').removeClass('active')
     $('.nav-link.ser').addClass('active')
   }
-  else if (isScrolledIntoView('#cont') === true) {
+  else if (isScrolledIntoView('#contact') === true) {
     $('.nav-item a').removeClass('active')
     $('.nav-link.cont').addClass('active')
   }

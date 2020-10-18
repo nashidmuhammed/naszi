@@ -353,7 +353,7 @@ opacity:1;
 header.masthead {
     padding-top: 20rem;
     padding-bottom: calc(10rem - 4.5rem);
-    background-image: url("../images/main.jpg");
+    background-image: url("../images/darkBG.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -630,5 +630,16 @@ header.masthead {
     .tst-bg img{
       width: 30px;
       height: 30px;
+    }
+    header.masthead {
+      margin-left: -200px;
+
+    }
+    header.masthead h1,header.masthead h2 {
+      margin-left: 200px;
+    }
+    .brand img{
+      width: 100px;
+      padding: 10px;
     }
   }
