@@ -2,7 +2,7 @@ console.log("ready")
 
 /*load*/
 $(window).on("load",function(){
-  $(".loader-wrapper").fadeOut("slow");
+  $(".loader-body").fadeOut("slow");
 });
 
 
